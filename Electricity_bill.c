@@ -31,7 +31,9 @@
      totalamounttopay *= 0.85; // 15% discount 
      }
      
-     totalamounttopay >= 100;
+     if(totalamounttopay<100){
+      totalamounttopay = 100;
+     }
      
      //Display  the output
      printf("\n•••Electricity Bill Details•••\n");
